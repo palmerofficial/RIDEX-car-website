@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>  <link rel="stylesheet" href="./assets/css/order.css">
+
+
+<head>
+  <title>Car Order </title>
+</head>
+<body>
+  <h1>Ridex Car Order </h1>
+  
+  <form action="/submit_order" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br><br>
+    
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required><br><br>
+    
+    <label for="phone">Phone:</label>
+    <input type="tel" id="phone" name="phone" required><br><br>
+    
+    <label for="car_model">Car Model:</label>
+    <select id="car_model" name="car_model" required>
+      <option value="">Select a car model</option>
+      <option value="model1">Model 3</option>
+      <option value="model2">Model s</option>
+      <option value="model3">Model x</option>
+      <option value="model2">Model s</option>
+      <option value="model2">Toyota RAV 4</option>
+      <option value="model2">bmw SERIES</option>
+      <option value="model2">VOXWALGEN</option>
+      <option value="model2">Model s PLAID</option>
+
+    </select><br><br>
+    
+    <label for="color">Color:</label>
+    <input type="text" id="color" name="color" required><br><br>
+    
+    <label for="features">Click check Box to:</label><br>
+    <input type="checkbox" id="feature1" name="features" value="feature1">
+   
+    <input type="submit" value="Submit Order">
+  </form>
+</body>
+</html>
